@@ -1,0 +1,47 @@
+@import "src/assets/styles/variables";
+
+header {
+  padding: 30px;
+  h1{
+    flex: 1 1 0;
+    font-family: 'Lobster', cursive;
+    font-size: 60px;
+    font-style: italic;
+    color: $primary-dark-title;
+  }
+  app-searchbox{
+    flex: 1 1 0;
+  }
+  .logo {
+    flex: 1 1 0;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 175px;
+  }
+  display: flex;
+  align-items: center;
+  margin: 30px;
+}
+
+footer{
+  background-color: $primary-dark-black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  color: white;
+  font-family: 'Libre Franklin', sans-serif;
+  font-style: italic;
+  font-size: 13px;
+  margin-top: 30px;
+}
+@media (max-width: $screen-xs-max){
+  header{
+    margin: 0;
+    flex-direction: column;
+    .logo{
+      margin-bottom: 15px;
+      width: 100%;
+    }
+  }
+}

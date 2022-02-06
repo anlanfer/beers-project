@@ -1,0 +1,12 @@
+<div class="search-box">
+  <!--I know that in the readme says:
+  'Shows the first 10 results with a matching name, in a list under the search box'
+  But I think this is coolest and I can use emit to a parent component to show you something else.
+  -->
+  <ng-container *ngIf="showInput">
+    <input @fadeIn @fadeOut type="text" (keyup)="searchBeers($event)"/>
+  </ng-container>
+  <a (click)="changeVisibilityInput()">
+    <mat-icon aria-hidden="false" aria-label="Example home icon">search</mat-icon>
+  </a>
+</div>
